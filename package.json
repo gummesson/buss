@@ -1,0 +1,42 @@
+{
+  "name": "buss",
+  "version": "0.0.0",
+  "description": "A tiny emitter for single, isolated events.",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/buss.git"
+  },
+  "keywords": [
+    "bus",
+    "event",
+    "events",
+    "emitter"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/buss/issues"
+  },
+  "homepage": "https://github.com/gummesson/buss",
+  "dependencies": {
+    "sliced": "1.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "covert": "^1.1.0",
+    "smokestack": "^3.3.0",
+    "tap-closer": "^1.0.0",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node test/",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "test:cover": "covert test/"
+  }
+}
