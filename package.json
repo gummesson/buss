@@ -1,6 +1,6 @@
 {
   "name": "buss",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A tiny emitter for single, isolated events.",
   "main": "index.js",
   "files": [
